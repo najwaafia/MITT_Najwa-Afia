@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Master Skill";
+}
+
+<h2>@ViewBag.Title</h2>
+<hr />
+
+<input type="button" value="Add New" class="btn btn-default" id="btnnew" onclick="window.location = '/Master/Add'" />
+<br />
+<br />
+<table border="1">
+    <tr>
+        <td align="center" width="100px">
+            Skill ID
+        </td>
+        <td align="center" width="100px">
+            Skill Name
+        </td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td align="center" width="100px">
+            1
+        </td>
+        <td align="center" width="100px">
+            a
+        </td>
+        <td align="center" width="150px">
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })*@
+            <input type="button" value="Edit" class="btn btn-default" onclick="window.location = '/Master/Edit'" id="btnedit" />
+            <input type="button" value="Delete" class="btn btn-default" id="btndelete" />
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "User Profile";
+    ViewBag.Title2 = "User Skills";
+}
+<h2>@ViewBag.Title</h2>
+<hr />
+<table>
+    <tr>
+        <td>
+            <label>Name</label>
+        </td>
+        <td width="50px" align="center"></td>
+        <td>
+            <input type="text" id="inputText" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Address</label>
+        </td>
+        <td width="50px" align="center"></td>
+        <td>
+            <textarea></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Birth of Date</label>
+        </td>
+        <td width="50px" align="center"></td>
+        <td>
+            <input type="date" id="inputDate" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Email</label>
+        </td>
+        <td width="50px" align="center"></td>
+        <td>
+            <input type="email" id="inputEmail" />
+        </td>
+    </tr>
+</table>
+<br />
+<input type="button" value="Update" class="btn btn-default" id="btnSubmit" />
+
+<h2>@ViewBag.Title2</h2>
+<hr />
+
+<input type="button" value="Add New" class="btn btn-default" id="btnnew" onclick="window.location = '/User/Add'" />
+<br />
+<br />
+
+<table border="1">
+    <tr>
+        <td align="center" width="100px">
+            Skill
+        </td>
+        <td align="center" width="100px">
+            level
+        </td>
+        <td align="center" width="100px"></td>
+    </tr>
+
+    <tr>
+        <td align="center" width="100px">
+            skill a
+        </td>
+        <td align="center" width="100px">
+            a
+        </td>
+        <td align="center" width="150px">
+            <input type="button" value="Edit" class="btn btn-default" id="btnedit" onclick="window.location = '/User/Edit'" />
+            <input type="button" value="Delete" class="btn btn-default" id="btndelete" />
+        </td>
+    </tr>
+</table>
